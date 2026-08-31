@@ -1,5 +1,6 @@
 package net.eliasaa.tutorialmod;
 
+import net.eliasaa.tutorialmod.creativemodetab.ModCreativeModeTabs;
 import net.eliasaa.tutorialmod.item.modItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +17,10 @@ public class Tutorialod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+
+
+        ModCreativeModeTabs.registerModCreativeModeTabs();
+
 		modItems.registerModItems();
 	}
 
