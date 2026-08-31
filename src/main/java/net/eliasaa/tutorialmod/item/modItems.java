@@ -23,15 +23,13 @@ public class modItems {
 
     }
 
+
     public static void registerModItems(){
         Tutorialod.LOGGER.info("Registrering Mod For Items" + Tutorialod.MOD_ID);
-
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(FLUORITE);
             output.accept(RAW_FLUORITE);
-
-
+        });
     }
-
 }
