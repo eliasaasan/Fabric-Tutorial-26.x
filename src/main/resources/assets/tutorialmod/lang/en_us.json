@@ -1,8 +1,5 @@
 {
-  "item.tutorialod.fluorite": "Fluorite",
-  "item.tutorialod.raw_fluorite": "Raw Fluorite"
-
-
-
+  "item.tutorialmod.fluorite": "Fluorite",
+  "item.tutorialmod.raw_fluorite": "Raw Fluorite"
 
 }
