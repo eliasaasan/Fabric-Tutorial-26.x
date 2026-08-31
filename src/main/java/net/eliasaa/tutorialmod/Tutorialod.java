@@ -1,5 +1,6 @@
 package net.eliasaa.tutorialmod;
 
+import net.eliasaa.tutorialmod.item.modItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -15,6 +16,7 @@ public class Tutorialod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+		modItems.registerModItems();
 	}
 
 	public static Identifier id(String path) {
