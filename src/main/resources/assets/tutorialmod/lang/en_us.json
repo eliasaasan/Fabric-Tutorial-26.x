@@ -3,7 +3,8 @@
   "item.tutorialmod.raw_fluorite": "Raw Fluorite",
   "block.tutorialmod.fluorite_block": "Block Of Fluorite",
   "block.tutorialmod.raw_fluorite_block": "Block Of Raw Fluorite",
-
+  "block.tutorialmod.fluorite_ore": "Fluorite Ore",
+  "block.tutorialmod.fluorite_deepslate_ore": "Fluorite Deepslate Ore",
 
   "creativemodetab.tutorialmod.fluorite_items": "Fluorite tut items",
   "creativemodetab.tutorialmod.fluorite_blocks": "Fluorite tut blocks"
