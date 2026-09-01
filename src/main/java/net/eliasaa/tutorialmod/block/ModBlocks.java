@@ -18,6 +18,9 @@ public class ModBlocks {
     public static final Block FLUORITE_BLOCK = registerBlock("fluorite_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block RAW_FLUORITE_BLOCK = registerBlock("raw_fluorite_block",
+            properties -> new Block(properties.strength(3f)
+                    .requiresCorrectToolForDrops()));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Tutorialod.MOD_ID, name))));

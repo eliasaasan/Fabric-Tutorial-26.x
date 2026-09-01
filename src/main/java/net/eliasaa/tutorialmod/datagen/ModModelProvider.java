@@ -16,6 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.RAW_FLUORITE_BLOCK);
 
     }
 

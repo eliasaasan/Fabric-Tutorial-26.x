@@ -30,7 +30,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativemodetab.tutorialmod.fluorite_blocks"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.FLUORITE_BLOCK);
-
+                        output.accept(ModBlocks.RAW_FLUORITE_BLOCK);
                         output.accept(modItems.RAW_FLUORITE);
 
 
