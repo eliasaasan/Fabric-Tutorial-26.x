@@ -1,5 +1,6 @@
 package net.eliasaa.tutorialmod;
 
+import net.eliasaa.tutorialmod.block.ModBlocks;
 import net.eliasaa.tutorialmod.creativemodetab.ModCreativeModeTabs;
 import net.eliasaa.tutorialmod.item.modItems;
 import net.fabricmc.api.ModInitializer;
@@ -22,6 +23,7 @@ public class Tutorialod implements ModInitializer {
         ModCreativeModeTabs.registerModCreativeModeTabs();
 
 		modItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {

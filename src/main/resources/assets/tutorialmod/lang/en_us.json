@@ -1,6 +1,9 @@
 {
   "item.tutorialmod.fluorite": "Fluorite",
   "item.tutorialmod.raw_fluorite": "Raw Fluorite",
+  "block.tutorialmod.fluorite_block": "Block Of Fluorite",
+
+
   "creativemodetab.tutorialmod.fluorite_items": "Fluorite tut items",
   "creativemodetab.tutorialmod.fluorite_blocks": "Fluorite tut blocks"
 

@@ -1,5 +1,6 @@
 package net.eliasaa.tutorialmod.datagen;
 
+import net.eliasaa.tutorialmod.block.ModBlocks;
 import net.eliasaa.tutorialmod.item.modItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -14,6 +15,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_BLOCK);
 
     }
 

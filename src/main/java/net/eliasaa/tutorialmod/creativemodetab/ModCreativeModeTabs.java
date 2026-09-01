@@ -1,6 +1,7 @@
 package net.eliasaa.tutorialmod.creativemodetab;
 
 import net.eliasaa.tutorialmod.Tutorialod;
+import net.eliasaa.tutorialmod.block.ModBlocks;
 import net.eliasaa.tutorialmod.item.modItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -25,9 +26,10 @@ public class ModCreativeModeTabs {
 
     public static final CreativeModeTab FLUORITE_BLOCK_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Tutorialod.MOD_ID, "flourite_blocks"),
-            FabricCreativeModeTab.builder().icon(()-> new ItemStack(modItems.RAW_FLUORITE))
+            FabricCreativeModeTab.builder().icon(()-> new ItemStack(ModBlocks.FLUORITE_BLOCK))
                     .title(Component.translatable("creativemodetab.tutorialmod.fluorite_blocks"))
                     .displayItems((parameters, output) -> {
+                        output.accept(ModBlocks.FLUORITE_BLOCK);
 
                         output.accept(modItems.RAW_FLUORITE);
 
