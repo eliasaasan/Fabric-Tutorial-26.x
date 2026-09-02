@@ -48,7 +48,9 @@ public class ModBlocks {
                         .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Tutorialod.MOD_ID, name)))));
     }
 
-
+    public static ResourceKey<Block> getKey(Block block) {
+        return ResourceKey.create(Registries.BLOCK, BuiltInRegistries.BLOCK.getKey(block));
+    }
 
     public static void registerModBlocks (){
         Tutorialod.LOGGER.info("Registering Mod Blocks for " + Tutorialod.MOD_ID);

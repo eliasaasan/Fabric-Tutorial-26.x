@@ -25,16 +25,17 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.FLUORITE_BLOCK.get())
-                .add(ModBlocks.RAW_FLUORITE_BLOCK.get())
-                .add(ModBlocks.FLUORITE_DEEPSLATE_ORE.get())
-                .add(ModBlocks.FLUORITE_ORE.get());
+                .add(ModBlocks.getKey(ModBlocks.FLUORITE_BLOCK))
+                .add(ModBlocks.getKey(ModBlocks.RAW_FLUORITE_BLOCK))
+                .add(ModBlocks.getKey(ModBlocks.FLUORITE_DEEPSLATE_ORE))
+                .add(ModBlocks.getKey(ModBlocks.FLUORITE_ORE));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.FLUORITE_DEEPSLATE_ORE)
+                .add(ModBlocks.getKey(ModBlocks.FLUORITE_DEEPSLATE_ORE));
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.FLUORITE_ORE)
+                .add(ModBlocks.getKey(ModBlocks.FLUORITE_ORE));
+
 
 
 
