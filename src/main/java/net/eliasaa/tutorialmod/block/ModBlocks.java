@@ -26,11 +26,11 @@ public class ModBlocks {
 
     public static final Block FLUORITE_ORE = registerBlock("fluorite_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2, 5),
-                    properties.strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHER_GOLD_ORE)));
+                    properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHER_GOLD_ORE)));
 
     public static final Block FLUORITE_DEEPSLATE_ORE = registerBlock("fluorite_deepslate_ore",
             properties -> new DropExperienceBlock(UniformInt.of(3, 6),
-                    properties.strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
+                    properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Tutorialod.MOD_ID, name))));
