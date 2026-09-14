@@ -28,6 +28,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(modItems.FLUORITE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(modItems.RAW_FLUORITE, ModelTemplates.FLAT_ITEM);
 
+        itemModelGenerators.generateFlatItem(modItems.CHISEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+
+
 
 
     }
