@@ -33,6 +33,8 @@ public class modItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(FLUORITE);
             output.accept(RAW_FLUORITE);
+
+
         });
     }
 }
